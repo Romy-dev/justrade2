@@ -231,8 +231,10 @@ hr {
     overflow-x: hidden;
     transition: 0.5s;
 }
+ .text-primary { 
+  color: #2C86D2; }
 .blue-text {
-  color: blue !important ;
+  color: #2C86D2 !important ;
 }
 .blue-text i {
   margin-right: 5px;
