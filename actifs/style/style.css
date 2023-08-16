@@ -25,13 +25,13 @@ body {
 }
 .custom-h2 {
   font-weight: bolder;
-  font-size: 40px;
-  color: #007bff; /* Couleur bleue pour le texte */
+  font-family:  sans-serif;
+  font-size: 55px;
+  color: #2C86D2; /* Couleur bleue pour le texte */
   padding: 0px; /* Marge intérieure pour créer l'espace pour la bordure */
-  -webkit-text-stroke: 2px white; /* Bordure blanche pour navigateurs Webkit */
-  text-shadow: 0 4px 4px  rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: 3px white; /* Bordure blanche pour navigateurs Webkit */
+  text-shadow: 0 5px 3px  rgba(0, 0, 0, 0.5);
   margin-top: 40px;
-}
   /* Arrondir l'icône */
   link[rel="icon"] {
     border-radius: 50%;
@@ -518,9 +518,6 @@ button[type="submit"]:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s box-shadow ease-in-out;
   border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: underline;
   width: 550px;
   height: 55px;
@@ -536,12 +533,7 @@ button[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s box-shadow ease-in-out;
   border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: underline;
   width: 550px;
   height: 55px;
@@ -685,9 +677,6 @@ button[type="submit"]:hover {
       box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s box-shadow ease-in-out;
       border-radius: 25px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       text-decoration: underline;
       width: 300px;
       height: 45px;
@@ -697,14 +686,8 @@ button[type="submit"]:hover {
       justify-content: center;
       align-items: center;
       margin-top: 5%;
-      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
-      transition: 0.3s box-shadow ease-in-out;
-      border-radius: 25px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       text-decoration: underline;
-      width: 420px;
+      width: 375px;
       height: 50px;
     }
     .custom {
