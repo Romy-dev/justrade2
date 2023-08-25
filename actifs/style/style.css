@@ -1,4 +1,3 @@
-
 * {
  
     padding: 0;
@@ -9,6 +8,8 @@
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    padding: 0;
+    margin: 0;
   
   }
   h1, h2, h3, h4, h5, h6 {
@@ -17,11 +18,6 @@ body {
   }
 .logo {
     height: 8%;
-}
-.ligne {
-    border-style: solid;
-    border-radius: 100px;
-    color:#2C86D2; 
 }
 .custom-h2 {
   font-weight: bolder;
@@ -32,6 +28,7 @@ body {
   -webkit-text-stroke: 3px white; /* Bordure blanche pour navigateurs Webkit */
   text-shadow: 0 5px 3px  rgba(0, 0, 0, 0.5);
   margin-top: 40px;
+}
   /* Arrondir l'icône */
   link[rel="icon"] {
     border-radius: 50%;
@@ -57,8 +54,7 @@ a {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #2C86D2;
-   /* Couleur du trait */
+    background-color: #2C86D2; /* Couleur du trait */
     visibility: hidden;
     transform: scaleX(0); /* Commence avec une largeur nulle */
     transition: all 0.3s ease-in-out; /* Animation de transition */
@@ -231,8 +227,6 @@ hr {
     overflow-x: hidden;
     transition: 0.5s;
 }
- .text-primary { 
-  color: #2C86D2; }
 .blue-text {
   color: #2C86D2 !important ;
 }
@@ -247,7 +241,7 @@ hr {
     flex-direction: column;
 }
 .sidenav li {
-    border-bottom: 1px solid #2C86D2;
+    border-bottom: 1px solid #F7F1F1;
     padding: 3%;
 }
 .annule {
@@ -278,7 +272,7 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #2C86D2;
+    background-color:#2C86D2;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -520,6 +514,9 @@ button[type="submit"]:hover {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s box-shadow ease-in-out;
   border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: underline;
   width: 550px;
   height: 55px;
@@ -535,12 +532,21 @@ button[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s box-shadow ease-in-out;
   border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: underline;
   width: 550px;
   height: 55px;
 }
-
+.ligne {
+  border-style: solid;
+  border-radius: 100px;
+  color: #2C86D2; 
+}
   .controle {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -622,12 +628,28 @@ button[type="submit"]:hover {
       text-align:start;
       margin-left: 50px;
   }
+  .contact {
+    background-image: url("../images/app1.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+.carrousel-tail{
+  width: 65%;
+}
     
 }
 @media only screen and (max-width:800px) {
     .navigue {
         display: none;
     }
+    .ligne {
+      border-style: solid;
+      border-radius: 100px;
+      color: #2C86D2; 
+      height: 80px;
+  }
 
     .menu,
     .logor {
@@ -679,6 +701,9 @@ button[type="submit"]:hover {
       box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s box-shadow ease-in-out;
       border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-decoration: underline;
       width: 300px;
       height: 45px;
@@ -687,7 +712,9 @@ button[type="submit"]:hover {
       display: flex;
       justify-content: center;
       align-items: center;
+      border: 1px solid #2C86D2;
       margin-top: 5%;
+      border-radius: 25px;
       text-decoration: underline;
       width: 375px;
       height: 50px;
