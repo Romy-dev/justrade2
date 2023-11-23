@@ -12,6 +12,16 @@
     <link href="https://fonts.googleapis.com/css?family=Inter:400,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <style>
+            .carousel-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+           .carousel-inner {
+            width: 100%; /* Ajustez la largeur selon vos besoins */
+           
+        }
+        </style>
 
 
 </head>
@@ -20,22 +30,21 @@
     <a href="#" id="back-to-top">
         <i class="fas fa-arrow-up"></i>
       </a>
-    <div class="container-fluid">
-      <div class="bloquer">
-        <div class="col d-flex justify-content-center align-items-center ">
-          <div class="col-2 navigue ">
-              <img src="../actifs\images\logo.jpg" style="width: 100%; height: 100%;" alt="logo">
-          </div>
-          <div class="col-10 navigue">
-              <ul>
-                  <li><a class="text-decoration-none" href="../index.html">Accueil</a></li>
-                  <li><a class="text-decoration-none" href="formationGratuite.html">Formation Gratuite</a></li>
-                  <li><a class="text-decoration-none" href="surgeryAcademy.html">Surgery Academy</a></li>
-                  <li><a class="text-decoration-none" href="apropos.html">A propos de nos formations</a></li>
-                  <li><a class="text-decoration-none" href="contacts.html">Contacts</a></li>
-              </ul>
-          </div>
-      </div>
+    <div class="container-fluid" style="padding: 0;">
+      <div class="col d-flex justify-content-center align-items-center navbloc" id="navbar">
+        <div class="col-2 navigue ">
+            <img src="../actifs\images\logo.jpg"  style="width: 150px; height: 110px; margin-bottom: 10px;" alt="logo">
+        </div>
+        <div class="col-10 navigue">
+            <ul style="padding: 25px; margin: 10px; height: 90px; display: flex;  align-items: center;">
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="../index.html">Accueil</a></li>
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="formationGratuite.html">Formation Gratuite</a></li>
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="surgeryAcademy.html">Surgery Academy</a></li>
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="apropos.html">A propos de nos formations</a></li>
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
       <div class="ligne">
         <div id="mySidenav" class="sidenav" style=" height: 50%;background-color: rgb(205, 229, 252); ">
           <br><br>
@@ -51,7 +60,7 @@
       </div>
           <div style="display: flex; justify-content: space-between;">
               <div class="logor">
-                  <img src="../actifs/images/logo.jpg" width="85px" height="60px" alt="">
+                  <img src="../actifs/images/logo.jpg" width="85px" height="60px" style="margin-top: 8px;" alt="">
               </div>
   
               <div class="menu">
@@ -61,15 +70,13 @@
           </div>
 
       </div>
-      </div>
-       
+      
+      <div class="core">
         <div class=" containers">
-          <div class="place">
-            <div class="col  align-items-center">
-              <img src="../actifs/images/.png "class="tail" alt="">
-            </div>
-              <div class="text-container ">
-                  <p class="animated-text">
+          <div>
+              <div class="text-container resolve " >
+               </span>
+                  <p class="animated-text" style="border-left: 4px solid #2C86D2; padding-left: 25px; ">
                     Le Trading est une activité qui se déroule sur <span class="text-primary"><strong>les marchés financiers</strong></span>, à partir de votre <span class="text-primary"><strong>plateforme de
                    trading</strong></span> en ligne afin de <span class="text-primary"><strong>passer des ordres d'achats et de ventes sur différents produits </strong></span> comme le Forex, les
                    Indices boursiers. L'impartial pour un trader est d'acheter ou de vendre un instrument financier à un
@@ -113,7 +120,7 @@
                 
         </div>
        <div  style="display: flex; justify-content: center;">
-        <a href="../signIn.html"><button class="btn btn-white  text-primary " style="color: #000000; box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2); transition: 0.3s box-shadow ease-in-out;" type="button" type="button"><strong> Decouvrir</strong></button></a>
+        <a href="../signIn.html"><button class="btn btn-white  text-primary decore " style="color: #000000; box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2); transition: 0.3s box-shadow ease-in-out;" type="button" type="button"><strong> Decouvrir</strong></button></a>
       </div>
         <div class="col d-flex justify-content-center align-items-center">
             <img src="../actifs/images/formation3.png" class="forme2" alt="">
@@ -142,87 +149,92 @@
                 </button>
             </div>
           </div>
-          <div class="d-fle justify-content-center ">
+          <div class="d-flex justify-content-center " >
             <div id="carouselAutoplaying" class="carousel slide"  data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                  <p style="font-size: 30px; font-weight: bolder;">On ne finit <span class="text-primary" style="font-size: 30px; font-weight: bolder;">jamais</span> d'apprendre.</p>
+              <div class="carousel-inner ">
+                <div class="carousel-item active " data-bs-interval="3000">
+                  <p class="cartext">On ne finit <span class="text-primary cartext " >jamais</span> d'apprendre.</p>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <p style="font-size: 30px; font-weight: bolder;">On ne finit <span class="text-primary" style="font-size: 30px; font-weight: bolder;">jamais</span> de s'informer.</p>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <p class="cartext" >On ne finit <span class="text-primary cartext">jamais</span> de s'informer.</p>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <p style="font-size: 30px; font-weight: bolder;">On ne finit <span class="text-primary" style="font-size: 30px; font-weight: bolder;">jamais</span> de se faire former.</p>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <p class="cartext">On ne finit <span class="text-primary cartext">jamais</span> de se faire former.</p>
                 </div>
               </div>
             </div>  
           </div>
       </div> 
+      </div>
+       
+        
     </div>
-    <footer class="footers">
-      <div class="footer-section">
-        <div class="footer-section-title">
-          <div class="vertical-line"></div>
-          <h3>JusTrade</h3>
-        </div>
-        <p>JusTrade est une structure spécialisée dans le Trading, ayant en son actif plus de 100 Etudiants aux quatre coins de l'Afrique.
-          Notre formule d'accès se nomme la Surgery base sur de multiples concepts et de méthodologie très avancés.</p>
-      </div>
-      <div class="footer-section">
-        <div class="footer-section-title">
-          <div class="vertical-line"></div>
-          <h3>Nos contacts</h3>
-        </div>
-        <div class="contact-icons">
-          <div class="contact-icon">
-              <div class="icon-square">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <p>Email: <br>info@justrade.company</p>
-              
-            </div>
-          <div class="contact-icon">
-            <div class="icon-square">
-              <i class="fas fa-phone"></i>
-            </div>
-            <p>Téléphone: <br> (+226) 51140302 / 74792355 
-              </p>
-            
-          </div>
-        </div>
-      </div> 
-      <div class="footer-section">
-        <div class="footer-section-title">
-          <div class="vertical-line"></div>
-          <h3>Suivez-nous !</h3>
-        </div>
-        <div class="social-icons">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-tiktok"></i>
-          <i class="fab fa-telegram"></i>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <div ></div>
-        <p>&copy; 2023 JUSTRADE. Tous droits réservés.</p>
-      </div>
-    </footer>
+   
     <script src="index.js"></script>
     <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "100%";
-        }
+       function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+     
+   </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 
 </body>
+<footer class="footers">
+  <div class="footer-section">
+    <div class="footer-section-title">
+      <div class="vertical-line"></div>
+      <h3>JusTrade</h3>
+    </div>
+    <p>JusTrade est une structure spécialisée dans le Trading, ayant en son actif plus de 100 Etudiants aux quatre coins de l'Afrique.
+      Notre formule d'accès se nomme la Surgery base sur de multiples concepts et de méthodologie très avancés.</p>
+  </div>
+  <div class="footer-section">
+    <div class="footer-section-title">
+      <div class="vertical-line"></div>
+      <h3>Nos contacts</h3>
+    </div>
+    <div class="contact-icons">
+      <div class="contact-icon">
+          <div class="icon-square">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <p>Email: <br>info@justrade.company</p>
+          
+        </div>
+      <div class="contact-icon">
+        <div class="icon-square">
+          <i class="fas fa-phone"></i>
+        </div>
+        <p>Téléphone: <br> (+226) 51140302 / 74792355 
+          </p>
+        
+      </div>
+    </div>
+  </div> 
+  <div class="footer-section">
+    <div class="footer-section-title">
+      <div class="vertical-line"></div>
+      <h3>Suivez-nous !</h3>
+    </div>
+    <div class="social-icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-tiktok"></i>
+      <i class="fab fa-telegram"></i>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div ></div>
+    <p>&copy; 2023 JUSTRADE. Tous droits réservés.</p>
+  </div>
+</footer>
 
 </html>
