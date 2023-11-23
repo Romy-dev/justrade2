@@ -2,7 +2,7 @@
  
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 body {
@@ -22,12 +22,12 @@ body {
 .custom-h2 {
   font-weight: bolder;
   font-family:  sans-serif;
-  font-size: 55px;
+  font-size: 30px;
   color: #2C86D2; /* Couleur bleue pour le texte */
   padding: 0px; /* Marge intérieure pour créer l'espace pour la bordure */
-  -webkit-text-stroke: 3px white; /* Bordure blanche pour navigateurs Webkit */
-  text-shadow: 0 5px 3px  rgba(0, 0, 0, 0.5);
-  margin-top: 40px;
+  -webkit-text-stroke: 1px white; /* Bordure blanche pour navigateurs Webkit */
+  text-shadow: 0 3px 2px  rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
 }
   /* Arrondir l'icône */
   link[rel="icon"] {
@@ -42,6 +42,7 @@ ul {
 a {
     color: #2C86D2;
 }
+
 .underline-animation {
     position: relative;
     display: inline-block;
@@ -88,7 +89,7 @@ a {
   text-align: center;
 }
 .tail {
-  width: 40%;
+  width: 100%;
 }
 .photo{
   padding: 20px;
@@ -116,11 +117,7 @@ a {
     transition: 1s;
     box-shadow: 0px 3px 10px #2C86D2;
 }
-.boxe img {
-    width: 100%;
-    height:50%;
-    margin-right: 10px;
-  }
+
     .boxe3 {
     border: 1px solid rgb(212, 208, 208);
     justify-content: auto;
@@ -191,7 +188,7 @@ a {
     box-shadow: 1px 2px black;
   }
 p {
-    padding: 5%;
+    padding: 2%;
 }
 hr {
     background-color: white;
@@ -308,11 +305,11 @@ button[type="submit"]:hover {
     background-color: #555;
   }
   
-  
-.footerImage {
-    width: 50%;
-    height: 50%;
-}
+  .rejoins{
+    margin-bottom: 10px;
+     margin-left: -25px;
+  } 
+
 
 .forme {
     width: 50%;
@@ -359,9 +356,7 @@ button[type="submit"]:hover {
     width: 30%;
 }
 
-.height {
-    height: 600px;
-}
+
 .repertoire{
     width:20%;
 }
@@ -372,15 +367,7 @@ button[type="submit"]:hover {
     right: 1px;
     font-size: x-large;
 
-}
-.navbar-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-  }
-  
+}  
 
 .footers {
   display: flex;
@@ -495,8 +482,123 @@ button[type="submit"]:hover {
     width: 100%;
     
   }
+
+  .resolve {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px; 
+   margin-bottom: 45px;
+  }
  
 @media only screen and (min-width:801px) {
+  .surgeryB {
+    background-image: url("../images/surgeryA1.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height:800px;
+    margin-top: 0;
+}
+.surgeryC {
+  background-image: url("../images/accueil1.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  height:800px;
+  margin-top: 0;
+}
+
+
+  #navbar {
+    transition: top 0.9s;
+}
+
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000; 
+    border-bottom:5px  solid;
+    color: #2C86D2; 
+    box-shadow: inset 0 -5px 5px -5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link.active {
+  
+  color: white !important; 
+  
+}
+.nav-link {
+  
+  font-size: 12px;
+  color: #2C86D2;
+}
+
+
+  .navbloc{
+    margin-top:0; 
+  }
+  .fond{
+    font-weight: bolder;
+     font-size:35px;
+  }
+
+  .custom-h2 {
+    font-weight: bolder;
+    font-family:  sans-serif;
+    font-size: 40px;
+    color: #2C86D2; /* Couleur bleue pour le texte */
+    padding: 0px; /* Marge intérieure pour créer l'espace pour la bordure */
+    -webkit-text-stroke: 2px white; /* Bordure blanche pour navigateurs Webkit */
+    text-shadow: 0 4px 1px  rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+  }
+  .reg{
+    margin: 50px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: relative;
+    
+  }
+  
+  .reg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #2C86D2;
+    transform: scaleY(0);
+    transform-origin:top;
+    transition: transform 1.6s ease-in-out;
+  }
+  
+  .reg:hover::before {
+    transform: scaleY(1);
+  }
+  .core {
+    margin: 50px; 
+    
+     box-sizing: border-box; 
+     display: flex;
+      flex-direction: column;
+       padding: 25px; 
+       background-color: white;
+       box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+       border-radius: 5px;
+  }
+  
+  .forme2 {
+    width: 100%;
+    height: auto;
+}
+  .resolve {
+    margin-top: 130px;
+    margin-bottom: 100px;
+  }
   .carousel-item active .element {
     display: flex;
     justify-content: center;
@@ -505,6 +607,8 @@ button[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 700px;
+  min-height: 400px;
 }
 .enlarge-box {
   display: flex;
@@ -546,16 +650,28 @@ button[type="submit"]:hover {
   border-style: solid;
   border-radius: 100px;
   color: #2C86D2; 
+
 }
   .controle {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;  
-    margin: 20px;
+     
+  }
+  .rejoins{
+    margin-bottom: 30px;
+     margin-left: -250px;
+  }
+  .controle .boxe {
+    width: 520px;
+    margin: auto;
+  
+  
   }
   .controle .boxe img {
-    height: 350px;
+    height: 360px;
+    width: 95%;
   }
+
   
   .box-3 {
     grid-column: 1 / span 2;
@@ -565,23 +681,29 @@ button[type="submit"]:hover {
 .place{
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  margin: 50px;
+  padding: 40px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  border-left: 4px solid #2C86D2;
 }
 .images {
-  flex: 0 0 40%;
+  flex: 0 0 35%;
   margin-right: 5px;
-  width: 40%;
-  margin-bottom: 60px;
+  width: 50%;
+  margin-bottom: 10px;
 }
 .places{
   flex: 1;
 }
- .tail{
-    width: 50%;
-    height:50%;
+ .tail img {
+    width: 45%;
+    height:45%;
   }
   
   .car{
-        height: 500px;
+        height: 350px;
     }
    
   .element {
@@ -590,20 +712,22 @@ button[type="submit"]:hover {
     align-items: center;
     justify-content: center;
     background-color: rgb(205, 229, 252);
-    border-top-left-radius: 72px;
-    padding: 10px;
-    width: 70%;
+    border-top-left-radius: 100%;
+    padding: 20px;
+    width: 100%;
   }
   .element .rond {
     border-radius: 100%;
   }
-
   .element img {
-    width: 400px;
-    height: 200px;
+    width: 350px; /* Limite la largeur maximale de l'image */
+    height: 350px; /* Limite la hauteur maximale de l'image */
     object-fit: cover;
-    float: left;
-    margin-right: 10px;
+    float: left; /* Pour aligner l'image à gauche */
+    margin-right: 500px; /* Espace entre l'image et le texte  */
+  }
+  .element h3 {
+    clear: left; /* Pour placer le texte en bas de l'image */
   }
     .social-icons{
       margin-top: 100px;
@@ -632,15 +756,120 @@ button[type="submit"]:hover {
     background-image: url("../images/app1.jpg");
     background-size: 100% 100%;
     width: 100%;
-    height: 500px;
-    margin-top: 50px;
+    height:800px;
+    margin-top: 0;
 }
-.carrousel-tail{
-  width: 65%;
+.appart-1 {
+  position: relative;
+  text-align: center;
+  margin: 20px; /* Ajustez les marges selon vos besoins */
+
+}
+
+.appart-2 {
+  position: absolute;
+  top: 50%; /* Positionnez le texte au milieu de l'image */
+  left: 90px; /* Ajoutez une marge à gauche */
+  transform: translateY(-25%); /* Centrez verticalement le texte */
+  text-align: left;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.61);
+  border-radius: 10px;
+  
+}
+.appart-2  span strong {
+  font-size: 1.2rem;
+}
+/* Ajouter une animation à l'image */
+.img-wrapper {
+  animation: fadeIn 1s ease-out; /* Vous devez définir l'animation fadeIn dans votre CSS */
+}
+.apparut-1:hover .appart-2 {
+  top: 50%; /* Au survol, déplacez le bas de l'image vers le haut */
+}
+
+/* Ajouter une animation à l'image */
+.img-wrapper {
+  animation: fadeIn 1s ease-out; /* Vous devez définir l'animation fadeIn dans votre CSS */
+}
+.tail-qlq p {
+  font-size: 40px;
+
+}
+.decore{
+  width: 300px;
+  height: 50px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.surgeryA{
+  display: none;
+}
+.imgba{
+  width: 100%;
+ height: 850px;
+  margin: 0;
+}
+.cartext{
+  font-size: 25px;
+  font-weight: bold;
+  width: 450px;
 }
     
 }
+.footerImage {
+  width: 50%;
+  height: 50%;
+}
+.footerImag {
+  width: 100%;
+  height: 40%;
+}
+
 @media only screen and (max-width:800px) {
+  .footerImag {
+    width: 100%;
+    height: 50%;
+}
+  .footerImage {
+    width: 50%;
+    height: 50%;
+}
+  .tail-qlq p {
+    font-size: 25px;
+    
+  }
+  .cartext{
+    font-size: 20px;
+    font-weight: bold;
+    width: 370px; 
+  }
+  .imgba{
+    width: 100%;
+   height: 300px;
+    margin: 0;
+  }
+  .surgeryB{
+    display: none;
+  }
+  .img-poste{
+    width: 100%;
+    max-width: 315px;
+    height: auto;
+  }
+  .core {
+    margin: 5px;
+      box-sizing: border-box;
+       display: flex;
+    flex-direction: column; 
+   padding: 15px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  }
+  .carrousel-tail{
+    width:100%;
+  }
     .navigue {
         display: none;
     }
@@ -660,7 +889,9 @@ button[type="submit"]:hover {
         width: 150px;
         height: 150px;
     }
-
+    .element{
+      min-height: 450px;
+    }
     .footerImage {
         width: 100%;
     }
@@ -677,6 +908,8 @@ button[type="submit"]:hover {
     .surgeryA {
         height: 250px;
         width: 100%;
+        margin: 0;
+      
     }
 
     .height {
@@ -698,7 +931,7 @@ button[type="submit"]:hover {
       justify-content: center;
       align-items: center;
       margin-top: 5%;
-      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.8);
       transition: 0.3s box-shadow ease-in-out;
       border-radius: 25px;
       display: flex;
@@ -716,8 +949,9 @@ button[type="submit"]:hover {
       margin-top: 5%;
       border-radius: 25px;
       text-decoration: underline;
-      width: 375px;
-      height: 50px;
+      width: 320px;
+      height: 45px;
+      margin-bottom:25px;
     }
     .custom {
       flex-direction: column; /* Afficher les éléments en colonne pour les écrans de moins de 800px */
@@ -733,6 +967,7 @@ button[type="submit"]:hover {
 }
 .car{
     width: 100%;
+     max-width: 365px;
 }
 
 .footer-section {
@@ -743,5 +978,9 @@ button[type="submit"]:hover {
 .footer-section-title h3 {
   display: flex;
   flex-wrap:wrap-reverse
+}
+.contact{
+  height: 250px;
+  margin-top: 0;
 }
 }
