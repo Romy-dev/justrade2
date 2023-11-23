@@ -17,21 +17,21 @@
         <i class="fas fa-arrow-up"></i>
       </a>
     
-    <div class="">
-        <div class="col d-flex justify-content-center align-items-center ">
-            <div class="col-2 navigue ">
-                <img src="actifs\images\logo.jpg" style="width: 100%; height: 100%;" alt="logo">
-            </div>
-            <div class="col-10 navigue">
-                <ul>
-                    <li><a class="text-decoration-none" style="font-weight: bold;" href="index.html">Accueil</a></li>
-                    <li><a class="text-decoration-none" style="font-weight: bold;" href="pages/formationGratuite.html">Formation Gratuite</a></li>
-                    <li><a class="text-decoration-none" style="font-weight: bold;" href="pages/surgeryAcademy.html">Surgery Academy</a></li>
-                    <li><a class="text-decoration-none" style="font-weight: bold;" href="pages/apropos.html">A propos de nos formations</a></li>
-                    <li><a class="text-decoration-none" style="font-weight: bold;" href="pages/contacts.html">Contacts</a></li>
-                </ul>
-            </div>
+    <div class="container-fluid" style="padding: 0;"> 
+      <div class="col d-flex justify-content-center align-items-center navbloc" id="navbar">
+        <div class="col-2 navigue ">
+            <img src="../actifs\images\logo.jpg"  style="width: 150px; height: 110px; margin-bottom: 10px;" alt="logo">
         </div>
+        <div class="col-10 navigue">
+            <ul style="padding: 25px; margin: 10px; height: 90px; display: flex;  align-items: center;">
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="index.html">Accueil</a></li>
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="pages/formationGratuite.html">Formation Gratuite</a></li>
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="pages/surgeryAcademy.html">Surgery Academy</a></li>
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="pages/apropos.html">A propos de nos formations</a></li>
+                <li><a class="nav-link text-decoration-none text-primary" style="font-size: 14px;" href="pages/contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
         <div class="ligne">
             <div id="mySidenav" class="sidenav" style=" height: 50%;background-color: rgb(205, 229, 252); ">
                 <br><br>
@@ -46,9 +46,9 @@
     
                 </ul>
             </div>
-            <div style="display: flex; justify-content: space-between;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
                 <div class="logor">
-                    <img src="actifs/images/logo.jpg" width="85px" height="60px" alt="">
+                    <img src="actifs/images/logo.jpg" width="85px" height="60px"  style="margin-top: 8px;"alt="">
                 </div>
     
                 <div class="menu">
@@ -58,33 +58,31 @@
             </div>
         </div>
 
-    </div>
-
-
- <br>
- <div class="col d-flex flex-column align-items-center justify-content-center " style="background-color: #2C86D2; " >
-    <img src="actifs/images/inscription.jpg" class="footerImage" alt="">
+ <div class=" d-flex flex-column align-items-center justify-content-center " style="background-color: #2C86D2; " >
+    <img src="actifs/images/inscription.jpg" class="footerImage" style="margin: 0;" alt="">
     <div>
-      <label for="email" class="space" style="display: flex; text-align: start; align-items: center; font-size: 25px; font-weight: bold;"><i class="fas fa-envelope"></i> Email :</label>
-      <input type="text" class="form-control" id="email" placeholder="Enter un email" style="width: 350px; height: 50px; border-radius: 15px;"><br> 
+      <label for="email" class="space" style="display: flex; text-align: start; align-items: center; font-size: 20px; font-weight: bold; margin: 10px;"><i class="fas fa-envelope"></i> Email :</label>
+      <input type="text" class="form-control" id="email" placeholder="Entrer votre mail" style="width: 350px; height: 50px; border-radius: 10px;"> 
     </div>
 
-    <div> 
-      <label for="text" class="space" style="display: flex; text-align: start; align-items: center; font-size: 25px; font-weight: bold;"><i class="fas fa-user"></i>
+    <div style="display: flex; flex-direction: column; align-items:flex-start;"> 
+      <label for="text" class="space" style="display: flex; text-align: start; align-items: center; font-size: 20px; font-weight: bold; margin: 10px;"><i class="fas fa-user"></i>
         Nom :</label>   
-      <input type="text" class="form-control" id="username" placeholder="Nom d'utilisateur" style="width: 350px; height: 50px;  border-radius: 15px;"><br> 
+      <input type="text" class="form-control" id="username" placeholder="Nom d'utilisateur" style="width: 350px; height: 50px;  border-radius: 10px;">
     </div>
 
     <div>  
-      <label for="password" class="space" style="display: flex; text-align: start; align-items: center; font-size: 25px; font-weight: bold;"> <i class="fas fa-lock"></i>Mot de passe :</label>
-       <input type="password" class="form-control" id="password" placeholder="Entrer un mot de passe" style="width: 350px;  border-radius: 15px; height: 50px;"> <br> 
+      <label for="password" class="space" style="display: flex; text-align: start; align-items: center; font-size: 20px; font-weight: bold; margin: 10px; "> <i class="fas fa-lock"></i>Mot de passe :</label>
+       <input type="password" class="form-control" id="password" placeholder="Entrer un mot de passe" style="width: 350px;  border-radius: 10px; height: 50px;"> 
     </div>
 
-    <input type="submit" value="Inscription" class="btn  text-primary mt-3" style="background-color: white; margin-bottom: 40px;  font-size: 35px; font-weight: bolder; border-radius: 25px;" id="signUp">
+    <input type="submit" value="Inscription" class="btn  text-primary mt-3" style="background-color: white; margin-bottom: 40px;  font-size: 30px; font-weight: bold; border-radius: 10px;" id="signUp">
     <div >
-        <img src="actifs/images/inscriptionfooter.jpeg" class="footerImage" alt="">
+        <img src="actifs/images/inscriptionfooter.jpeg" class="footerImag" alt="">
     </div>
  </div> 
+    </div>
+      
 </body>
 
 
